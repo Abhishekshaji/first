@@ -1,0 +1,28 @@
+//@dart=2.9
+import 'dart:io';
+
+void main() {
+  print("Enter the numbers");
+  int a = int.parse(stdin.readLineSync());
+  int b = int.parse(stdin.readLineSync());
+  var maths = new Assignment(addition:'a+b', sub:'a-b',multiplication:'a*b', division:'a/b');
+  print(maths.addition);
+  print(maths.sub);
+  print(maths.multiplication);
+  print(maths.division);
+}
+class Assignment
+{
+int addition;
+int sub;
+int multiplication;
+int division;
+Assignment({this.additon,this.sub,this.division,this.multiplication})
+{
+  additon =a+b;
+  sub=a-b;
+  multiplication=a*b;
+  division=a/b;
+}
+
+}
